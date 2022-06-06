@@ -17,6 +17,8 @@ class DoaController extends Controller
         // dd($data);
 
         return view('content.doa', compact('data', 'user'));
+
+        
     }
     public function hijriyah()
     {

@@ -11,8 +11,25 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav-1" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>API CRUD</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav-1" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{{route('allMutabaah')}}">
+              <i class="bi bi-circle" ></i><span>Mutabaah</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{route('allEmas')}}">
+              <i class="bi bi-circle" ></i><span>Harga Emas</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+      <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>API Get</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
@@ -20,6 +37,7 @@
               <i class="bi bi-circle" ></i><span>Doa Harian</span>
             </a>
           </li>
+         
         </ul>
       </li><!-- End Components Nav -->
 

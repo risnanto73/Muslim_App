@@ -3,21 +3,16 @@
 <div class="col-12">
     <div class="card recent-sales overflow-auto">
 
-      <div class="filter">
-
-        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-          <li class="dropdown-header text-start">
-            <h6>Filter</h6>
-          </li>
-
-          <li><a class="dropdown-item" href="#">Doa</a></li>
-          <li><a class="dropdown-item" href="#">This Month</a></li>
-          <li><a class="dropdown-item" href="#">This Year</a></li>
-        </ul>
-      </div>
-
+     
+      
       <div class="card-body">
-        <h5 class="card-title">Doa Harian <span>| Zona Anak</span></h5>
+        
+        <h5 class="card-title ">Doa Harian <span>| Zona Anak</span></h5>
+        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary " > <i class="bi bi-plus"></i></a></div>
+        
+       
+        
+        
 
         <table class="table table-borderless datatable">
           <thead>
