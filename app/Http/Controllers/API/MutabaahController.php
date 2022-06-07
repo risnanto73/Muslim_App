@@ -19,6 +19,7 @@ class MutabaahController extends Controller
         // if (!$user) {
         //     return $this->responError(1, "Harap Login dulu");
         // }
+
         $mutabaah = Mutabaah::where('user_id', '=', $user->id)->get();
         if (!$mutabaah) {
             return $this->responError(0, "data tidak tersedia");

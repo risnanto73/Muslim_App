@@ -25,7 +25,6 @@ Route::get('/allEmas', [EmasController::class, 'getEmas']);
 
 // auth
 Route::controller(AuthController::class)->group(function () {
-    // Route::get('/tes', 'regis');
     Route::post('/regis', 'regis');
     Route::post('/login', 'login');
 });
