@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\API\DoaController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\EmasController;
 use App\Http\Controllers\MutabaahController;
 use App\Http\Controllers\UserController;
@@ -48,4 +49,11 @@ Route::controller(EmasController::class)->group(function () {
     Route::get('/emas', 'index')->name('allEmas');
     Route::get('/emas/store', 'create')->name('toFormEmas');
     Route::post('/emas/store', 'store')->name('storeEmas');
+});
+
+// berita
+Route::controller(BeritaController::class)->group(function () {
+    Route::get('/berita', 'index')->name('allBerita');
+    Route::get('/berita/create', 'toFormBerita')->name('toFormBerita');
+    Route::post('/berita/store', 'store')->name('storeBerita');
 });

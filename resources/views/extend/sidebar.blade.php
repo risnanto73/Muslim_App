@@ -25,6 +25,11 @@
               <i class="bi bi-circle" ></i><span>Harga Emas</span>
             </a>
           </li>
+          <li>
+            <a href="{{route('allBerita')}}">
+              <i class="bi bi-circle" ></i><span>Berita</span>
+            </a>
+          </li>
         </ul>
       </li><!-- End Components Nav -->
       <li class="nav-item">
