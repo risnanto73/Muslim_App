@@ -9,9 +9,12 @@ class Mutabaah extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id',
         'catatan',
         'deskripsi',
         'user_id'
     ];
+    public function mutabaah()
+    {
+        return $this->hasMany(User::class, 'id', 'user_id');
+    }
 }
