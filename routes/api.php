@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\API\BeritaController;
-use App\Http\Controllers\API\EmasController;
-use App\Http\Controllers\API\MutabaahController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\EmasController;
+use App\Http\Controllers\API\BeritaController;
+use App\Http\Controllers\API\MutabaahController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,14 +26,13 @@ Route::get('/allEmas', [EmasController::class, 'getEmas']);
 
 // auth
 Route::controller(AuthController::class)->group(function () {
-    // Route::get('/tes', 'regis');
     Route::post('/regis', 'regis');
     Route::post('/login', 'login');
 });
 
 // mutabaah
 Route::controller(MutabaahController::class)->group(function () {
-    Route::get('/allMutabaah', 'getMutabaah')->middleware();
+    Route::get('/allMutabaah/{id}', 'getMutabaah')->middleware();
 });
 
 // berita
