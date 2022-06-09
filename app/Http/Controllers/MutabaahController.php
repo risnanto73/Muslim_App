@@ -14,7 +14,7 @@ class MutabaahController extends Controller
     {
         $user = Auth::user();
         // get user that login now
-        
+
         $mutabaah = Mutabaah::where('user_id', '=', $user->id)->get();
         return view('content.mutabaah.mutabaah', compact('mutabaah', 'user'));
     }
@@ -29,7 +29,7 @@ class MutabaahController extends Controller
             ]
         );
 
-        return redirect('/allMutabaah');
+        return redirect('/mutabaah');
     }
 
     public function toForm()
