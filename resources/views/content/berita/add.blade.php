@@ -34,6 +34,7 @@
                 <div class="row mb-3">
                   <label for="inputEmail" class="col-sm-2 col-form-label">Isi Berita</label>
                   <div class="col-sm-10">
+                     <div id="editor">This is some sample content.</div>
                     <textarea type="text" name="isi" value="" class="form-control"></textarea>
                   </div>
                 </div>
@@ -58,3 +59,5 @@
 
 
 @endsection
+
+
