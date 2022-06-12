@@ -25,15 +25,15 @@ class AuthController extends Controller
             'email.email'        => 'Email tidak valid.',
             'email.unique'       => 'Email sudah terdaftar.',
 
-            'telp.required'      => 'Telepon wajib diisi.',
-            'telp.numeric'       => 'Telepon harus berupa angka.',
-            'telp.unique'        => 'Nomor telepon tertaut pada akun lain.',
+            // 'telp.required'      => 'Telepon wajib diisi.',
+            // 'telp.numeric'       => 'Telepon harus berupa angka.',
+            // 'telp.unique'        => 'Nomor telepon tertaut pada akun lain.',
         ];
 
         $validasi = Validator::make($request->all(), [
             'name'               => ['required', 'string', 'max:255'],
             'email'              => ['required', 'string', 'email', 'unique:users'],
-            'telp'               => ['required', 'numeric', 'unique:users'],
+            // 'telp'               => ['required', 'numeric', 'unique:users'],
             'password'           => ['required', 'min:5', 'string']
         ], $psn);
 
@@ -45,7 +45,7 @@ class AuthController extends Controller
         $user = User::create([
             'name'                  => $request->name,
             'email'                 => $request->email,
-            'telp'                  => $request->telp,
+            // 'telp'                  => $request->telp,
             'password'              => encrypt($request->password)
             // 'password'              => bcrypt($request->password)
         ]);
